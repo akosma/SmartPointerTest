@@ -1,0 +1,223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4D42DC1340CECC008101E8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D42D71340CECC008101E8 /* main.mm */; };
+		3A4D42DD1340CECC008101E8 /* SomeClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D42DB1340CECC008101E8 /* SomeClass.mm */; };
+		3A97E5C61340AB92007392B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A97E5C51340AB92007392B5 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A97E5BF1340AB92007392B5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A4D42D71340CECC008101E8 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3A4D42D81340CECC008101E8 /* SmartPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartPointer.h; sourceTree = "<group>"; };
+		3A4D42D91340CECC008101E8 /* SmartPointerTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmartPointerTest-Prefix.pch"; sourceTree = "<group>"; };
+		3A4D42DA1340CECC008101E8 /* SomeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeClass.h; sourceTree = "<group>"; };
+		3A4D42DB1340CECC008101E8 /* SomeClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SomeClass.mm; sourceTree = "<group>"; };
+		3A97E5C11340AB92007392B5 /* SmartPointerTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmartPointerTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A97E5C51340AB92007392B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A97E5BE1340AB92007392B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A97E5C61340AB92007392B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4D42D61340CECC008101E8 /* SmartPointerTest */ = {
+			isa = PBXGroup;
+			children = (
+				3A4D42D71340CECC008101E8 /* main.mm */,
+				3A4D42D81340CECC008101E8 /* SmartPointer.h */,
+				3A4D42DA1340CECC008101E8 /* SomeClass.h */,
+				3A4D42DB1340CECC008101E8 /* SomeClass.mm */,
+				3A4D42D91340CECC008101E8 /* SmartPointerTest-Prefix.pch */,
+			);
+			path = SmartPointerTest;
+			sourceTree = "<group>";
+		};
+		3A97E5B61340AB92007392B5 = {
+			isa = PBXGroup;
+			children = (
+				3A4D42D61340CECC008101E8 /* SmartPointerTest */,
+				3A97E5C41340AB92007392B5 /* Frameworks */,
+				3A97E5C21340AB92007392B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A97E5C21340AB92007392B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A97E5C11340AB92007392B5 /* SmartPointerTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A97E5C41340AB92007392B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A97E5C51340AB92007392B5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A97E5C01340AB92007392B5 /* SmartPointerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A97E5CF1340AB92007392B5 /* Build configuration list for PBXNativeTarget "SmartPointerTest" */;
+			buildPhases = (
+				3A97E5BD1340AB92007392B5 /* Sources */,
+				3A97E5BE1340AB92007392B5 /* Frameworks */,
+				3A97E5BF1340AB92007392B5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartPointerTest;
+			productName = AutoPtrTest;
+			productReference = 3A97E5C11340AB92007392B5 /* SmartPointerTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A97E5B81340AB92007392B5 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3A97E5BB1340AB92007392B5 /* Build configuration list for PBXProject "SmartPointerTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A97E5B61340AB92007392B5;
+			productRefGroup = 3A97E5C21340AB92007392B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A97E5C01340AB92007392B5 /* SmartPointerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A97E5BD1340AB92007392B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4D42DC1340CECC008101E8 /* main.mm in Sources */,
+				3A4D42DD1340CECC008101E8 /* SomeClass.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A97E5CD1340AB92007392B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3A97E5CE1340AB92007392B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3A97E5D01340AB92007392B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartPointerTest/SmartPointerTest-Prefix.pch";
+				PRODUCT_NAME = SmartPointerTest;
+			};
+			name = Debug;
+		};
+		3A97E5D11340AB92007392B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartPointerTest/SmartPointerTest-Prefix.pch";
+				PRODUCT_NAME = SmartPointerTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A97E5BB1340AB92007392B5 /* Build configuration list for PBXProject "SmartPointerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A97E5CD1340AB92007392B5 /* Debug */,
+				3A97E5CE1340AB92007392B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A97E5CF1340AB92007392B5 /* Build configuration list for PBXNativeTarget "SmartPointerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A97E5D01340AB92007392B5 /* Debug */,
+				3A97E5D11340AB92007392B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A97E5B81340AB92007392B5 /* Project object */;
+}

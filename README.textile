@@ -1,0 +1,14 @@
+h1. Smart Pointer in Objective-C++
+
+This project shows a simple implementation in Objective-C++ of the concept of "Smart Pointers" as described by Andrei Alexandrescu in chapter 7 of his book "Modern C++ Design":http://www.amazon.com/Modern-Design-Generic-Programming-Patterns/dp/0201704315.
+
+h2. Implementation
+
+The project (compatible with Xcode 4) creates a simple command line application. It uses a C++ class that takes ownership of any Objective-C pointer, and releases it when its destructor is called. To retrieve the underlying Objective-C pointer, just use the "*" or "()" operators, or call the ".get()" method on the reference.
+
+This project is only an experiment, and should not be used in production applications.
+
+h2. License
+
+This project is licensed with a liberal BSD license. See the LICENSE file for details.
+ 
