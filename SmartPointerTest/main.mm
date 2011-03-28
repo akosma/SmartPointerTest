@@ -23,7 +23,7 @@ int main (int argc, const char * argv[])
     for (NSInteger index = 0; index < 10; ++index)
     {
         // A SmartPointer around an NSObject
-        SmartPointer<NSObject> obj = SmartPointer<NSObject>::create();
+        SmartPointer<NSObject> obj = [[NSObject alloc] init];
 
         // SomeType is a typedef (see above)
         SomeType someObj = SomeType::create();

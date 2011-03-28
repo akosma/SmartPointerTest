@@ -20,6 +20,7 @@ namespace ako
         SmartPointer(T*);
         SmartPointer(const SmartPointer&);
         SmartPointer& operator=(const SmartPointer&);
+        SmartPointer& operator=(T* object);
         virtual ~SmartPointer();
         
         // Methods to get access to the underlying Objective-C object
@@ -79,7 +80,19 @@ namespace ako
         }
         return *this;
     }
-
+    
+    /**
+     Assignment operator to Objective-C types.
+     The idea of this syntax for assignment comes from 
+     https://github.com/philsquared/OCPtr
+     */
+    template <class T>
+    SmartPointer<T>& SmartPointer<T>::operator=(T* object)
+    {
+        _pointee = object;
+        return *this;
+    }
+    
     /**
      Destructor.
      The important part of the class is here; when a C++ object
